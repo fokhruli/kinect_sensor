@@ -1,0 +1,9 @@
+main():
+
+
+https://www.mathworks.com/help/supportpkg/kinectforwindowsruntime/acquire-images-with-kinect-v2.html
+
+https://www.mathworks.com/help/supportpkg/kinectforwindowsruntime/examples/plot-skeletons-with-the-kinect-v2.html
+
+
+https://www.mathworks.com/help/supportpkg/kinectforwindowsruntime/ug/acquire-image-and-body-data-using-kinect-v2.html

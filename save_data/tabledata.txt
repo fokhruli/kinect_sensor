@@ -1,0 +1,6 @@
+Pitch,Shape,Price,Stock
+0.7,Pan,10,376
+0.8,Round,13.59,502
+1,Button,10.5,465
+1.25,Pan,12,1091
+1.5,Round,16.69,562

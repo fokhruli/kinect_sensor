@@ -1,0 +1,9 @@
+%% setup cam object
+cam = webcam;
+
+%% grab and process image
+
+frames =200;
+
+for i = 1:frames
+    im
