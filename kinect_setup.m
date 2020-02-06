@@ -1,9 +1,10 @@
+function kinect()
 imaqreset;
 %create color and depth kinect videoinput objects
 colorVid = videoinput('kinect', 1);
 depthVid = videoinput('kinect', 2);
 triggerconfig (depthVid,'manual');
-framesPerTrig = ;
+framesPerTrig = 1;
 depthVid.FramesPerTrigger=framesPerTrig;
 depthVid.TriggerRepeat=inf;
 src = getselectedsource(depthVid);
@@ -57,3 +58,7 @@ hold off;
 end
 end
 stop(depthVid);
+delete(vid)
+clear vid
+end
+
