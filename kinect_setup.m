@@ -60,7 +60,9 @@ flushdata(depthvid,'triggers');
 %clear vid;
 end
 stop(depthVid);
-delete(depthVid) %Always remove image acquisition objects from memory, and the variables that reference them, when you no longer need them.
-clear depthVid
+delete(depthVid); %Always remove image acquisition objects from memory, and the variables that reference them, when you no longer need them.
+clear depthVid;
+delete(colorVid);
+clear colorVid;
 end
 
