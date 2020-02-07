@@ -57,6 +57,7 @@ end
 hold off;
 end
 flushdata(depthvid,'triggers');
+flushdata(colorvid,'triggers');
 %clear vid;
 end
 stop(depthVid);
