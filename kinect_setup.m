@@ -1,9 +1,10 @@
+function kinect()
 imaqreset;
 %create color and depth kinect videoinput objects
 colorVid = videoinput('kinect', 1);
 depthVid = videoinput('kinect', 2);
 triggerconfig (depthVid,'manual');
-framesPerTrig = ;
+framesPerTrig = 1;
 depthVid.FramesPerTrigger=framesPerTrig;
 depthVid.TriggerRepeat=inf;
 src = getselectedsource(depthVid);
@@ -55,5 +56,14 @@ end
 end
 hold off;
 end
+flushdata(depthvid,'triggers');
+flushdata(colorvid,'triggers');
+%clear vid;
 end
 stop(depthVid);
+delete(depthVid); %Always remove image acquisition objects from memory, and the variables that reference them, when you no longer need them.
+clear depthVid;
+delete(colorVid);
+clear colorVid;
+end
+
